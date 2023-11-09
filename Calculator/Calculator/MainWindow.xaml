@@ -1,0 +1,29 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="170">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="textBoxElso" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="45"/>
+        <TextBox x:Name="textBoxMasodik" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="45"/>
+        <Button Click="buttonPlus_Click" x:Name="buttonPlus" Content="+" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" VerticalContentAlignment="Center"/>
+        <Button Click="buttonMinus_Click" x:Name="buttonMinus" Content="-" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Width="20" VerticalContentAlignment="Center"/>
+        <Button Click="buttonMulti_Click" x:Name="buttonMulti" Content="*" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" VerticalContentAlignment="Center"/>
+        <Button Click="buttonDevi_Click" x:Name="buttonDevi" Content="/" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Width="20" VerticalContentAlignment="Center"/>
+        <Button Click="buttonSzaz_Click" x:Name="buttonSzaz" Content="%" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" VerticalContentAlignment="Center"/>
+        <TextBlock x:Name="textBlockEredmeny" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15"/>
+    </Grid>
+</Window>
